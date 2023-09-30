@@ -56,7 +56,7 @@ var bcModSDK=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
 
 
     async function ChatRoomReleasePlayer() {
-        DrawButton(960, 5, 90, 90, "", "White", "Icons/Asylum.png", "Release");
+        DrawButton(960, 5, 90, 90, "", "White", "Icons/BCS.png", "Release");
         var msg = "Released";
         ServerSend("ChatRoomChat", {
             Content: "Beep",

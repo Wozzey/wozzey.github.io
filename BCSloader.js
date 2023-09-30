@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name ULTRAbc
 // @namespace https://www.bondageprojects.com/
-// @version 2.2
-// @description Everything you'll ever need for BC
-// @author Nemesea
+// @version 0.1
+// @description New ways to struggle and lockpick in BC
+// @author W
 // @match https://bondageprojects.elementfx.com/*
 // @match https://www.bondageprojects.elementfx.com/*
 // @match https://bondage-europe.com/*
@@ -18,7 +18,7 @@ setTimeout(
 			let n = document.createElement("script");
 			n.setAttribute("language", "JavaScript");
 			n.setAttribute("crossorigin", "anonymous");
-			n.setAttribute("src", "https://tetris245.github.io/ultrabc.github.io/ULTRAbc.js?_=" + Date.now());
+			n.setAttribute("src", "https://github.com/Wozzey/BCS/blob/master/BCS.js?_=" + Date.now());
 			n.onload = () => n.remove();
 			document.head.appendChild(n);
 	}, 

@@ -59,9 +59,9 @@ var bcModSDK=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
     async function ChatRoomReleasePlayer() {
         modApi.hookFunction('ChatRoomMenuDraw', 4, (args, next) => {
             if(cheatButtonsOn == true) {
-                DrawButton(0, 0, 90, 90, "", "White", "", "BCSRelease");
+                DrawButton(0, 0, 90, 90, "FREE", "Purple", "", "BCSRelease");
             }
-
+            return;
         });
     }
 })();

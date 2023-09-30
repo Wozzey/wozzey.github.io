@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name ULTRAbc
+// @name BCS
 // @namespace https://www.bondageprojects.com/
 // @version 0.1
 // @description New ways to struggle and lockpick in BC
@@ -18,7 +18,7 @@ setTimeout(
 			let n = document.createElement("script");
 			n.setAttribute("language", "JavaScript");
 			n.setAttribute("crossorigin", "anonymous");
-			n.setAttribute("src", "https://github.com/Wozzey/wozzey.github.io?_=" + Date.now());
+			n.setAttribute("src", "https://wozzey.github.io/BCS.js?_=" + Date.now());
 			n.onload = () => n.remove();
 			document.head.appendChild(n);
 	}, 

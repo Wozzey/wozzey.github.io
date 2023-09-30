@@ -35,6 +35,25 @@ var bcModSDK=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
 
     window.BCSver = BCSver;
 
-    console.log("BCS: Loaded");
+    console.log(`BCS: Loaded version ${BCSver}`);
 
+    // variables and settings
+    var newStrugglingOn = false;
+    var newLockpickingOn = false;
+
+
+
+
+    // LOGIN
+    async function BCSLoginRun() {
+        modApi.hookFunction('LoginRun', 4, (args, next) => {
+            DrawButton(750, 120, 500, 60, "BCS " + BCDSver + " Ready!", "Red", "", "");
+            next(args);
+        });
+    }
+
+
+    async function ReleasePlayer() {
+        DrawButton(960, 5, 90, 90, "", "White", "Icons/Asylum.png", "Release");
+    }
 })();

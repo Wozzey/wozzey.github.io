@@ -18,7 +18,7 @@ setTimeout(
 			let n = document.createElement("script");
 			n.setAttribute("language", "JavaScript");
 			n.setAttribute("crossorigin", "anonymous");
-			n.setAttribute("src", "https://github.com/Wozzey/BCS/blob/master/BCS.js?_=" + Date.now());
+			n.setAttribute("src", "https://github.com/Wozzey/wozzey.github.io?_=" + Date.now());
 			n.onload = () => n.remove();
 			document.head.appendChild(n);
 	}, 

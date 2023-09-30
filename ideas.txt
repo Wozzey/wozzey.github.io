@@ -1,0 +1,20 @@
+BC addons to rewamp struggling and lockpicking
+
+- Mind control maybe?
+- Or more indepth hypnosis?
+
+
+- struggling is divided into multible parts
+- Force
+- Loosening
+- Pulling
+- 
+
+
+
+
+- lockpicking
+- remove cooldown
+- add a way to sense different pins
+- Security pins for higher level locks?
+- Security pins would be threaded, hollow, serrated

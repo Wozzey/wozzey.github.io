@@ -40,6 +40,7 @@ var bcModSDK=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
     // variables and settings
     var newStrugglingOn = false;
     var newLockpickingOn = false;
+    var cheatButtonsOn = false;
 
 
     // funcs
@@ -57,7 +58,20 @@ var bcModSDK=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
 
     async function ChatRoomReleasePlayer() {
         modApi.hookFunction('ChatRoomMenuDraw', 4, (args, next) => {
-            DrawButton(0, 0, 90, 90, "", "White", "Icons/Logo.png", "Release");
+            if(cheatButtonsOn == true) {
+                DrawButton(0, 0, 90, 90, "", "White", "Icons/Logo.png", "Release");
+            }
+
+        });
+    }
+})();
+
+
+
+
+
+
+/*
             var msg = "Released";
             ServerSend("ChatRoomChat", {
                 Content: "Beep",
@@ -70,6 +84,4 @@ var bcModSDK=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
             CharacterReleaseTotal(Player);
             ChatRoomCharacterUpdate(Player);
             return;
-        });
-    }
-})();
+*/
